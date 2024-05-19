@@ -3,7 +3,7 @@
 ## Set-up your database in main.go files of each microservice(order, product, user)
 
 ## Create 3 tables(orders, products, users) in your database
-+ CREATE TABLE users (
+CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     email VARCHAR(100) UNIQUE,
