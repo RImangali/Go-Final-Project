@@ -52,7 +52,7 @@ func getProduct(client pb.ProductServiceClient) {
 }
 
 func updateProduct(client pb.ProductServiceClient) {
-    req := &pb.UpdateProductRequest{Id: "1", Name: "Updated Product", Description: "This is an updated product", Price: 150.0}
+    req := &pb.UpdateProductRequest{Id: "1", Name: "Banana", Description: "This is a banana from Uzbekistan", Price: 200.0}
     res, err := client.UpdateProduct(context.Background(), req)
     if err != nil {
         log.Fatalf("Could not update product: %v", err)
