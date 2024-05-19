@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package user;
 
-option go_package = "github.com/RImangali/user_service/pb";
+option go_package = "/pb";
 
 service UserService {
     rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
